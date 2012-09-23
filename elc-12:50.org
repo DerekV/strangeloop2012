@@ -1,0 +1,63 @@
+Michael Fogus
+Datalog 
+
+* most general unifier MGU
+  unify code and dat
+* prolog 
+  data as code
+** not purely declaritive
+  - never finish query, order clauses differently to fix
+** but has semantic problems
+  - ! (cut), fail
+* datalog
+  - a query language only
+  - declaritive with termination
+
+* datalog implementations/flavors
+** EAV
+   entity attribute value
+** no nead for a database
+   eg pass in database as parameter, or litteral data
+     nice for testing
+** Datomic
+*** Time
+    [john :favorite/food :pizza <last week>]
+    "time travel"
+    (look at database in a time range)
+
+** Dataleas (sp?)
+   implemented by balloon
+*** Time
+    tick model 
+**** deductive time
+     "right now" 
+**** inductive time
+     "some other time", next time tick
+**** async time
+     for concurrant unreliable network "as some time in the future"
+**** state
+     at time tick 0, - some state (some facts)
+     update at time tick 100 - new state (different facts)
+***** mutable persistance rule
+     
+** cascalog
+   lispy (clojure)
+   
+* datalog negation
+  if a datalog supports negation, can define rules with not
+
+* datalog open question
+** query plans
+   ensuring that db does the right thing
+   no runtime gaurentee
+*** prolog
+    ordering for termination
+*** datalog
+    ordering for speed 
+      (gaurenteed to terminate, not to be fast)
+    so somewhat the same situation as prolog
+    "order doesn't matter - except when it does"
+**** pluggable optimizers
+     plug in your own optimizer based on your data
+     runs without effecting 
+** ?
