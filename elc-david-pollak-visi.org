@@ -1,0 +1,77 @@
+David Pollak
+Visi
+
+"Visi: Cultured & Distributed"
+
+* Pollak 
+  Mesa - 1992
+  Integer
+  Founded Lift
+
+* Tension: Compatibility vs Innovation
+  EG Train Gauges are different between states in australia.
+  
+
+* Influences
+  clojure? rust? haskell? scala? OCaml? rails?
+
+* spreadsheets can "move around" your computation
+  Like SQL - user tells the system what they want to do not how to do it.
+  Means user doesn't know if its serialized, multithreaded, executed in the cloud...
+
+
+* visi
+** sources
+** syncs
+** refrences
+
+* serialization 
+  "erlang is the one language that does serialization right... and maybe haskell"
+
+* Code inside document 
+  markdown
+  "we care more about the prose than the model"
+  "By default we are going to create an enviroment where people can succeed at documentation
+
+* visi properties
+** type inferance
+   UI will not let you do anything that is not acceptable for model
+** imediate feedback
+** functional
+   Mesa was more "OO" influenced 
+** structural typing ala OCaml
+** single level subtyping
+** immutable data structures
+
+* Meta
+** Spreadsheet language, re-imagined
+** An exploration of culture, technology, and PLT
+** why
+   - spreadsheet is most common language in the world
+   - it's massively broken
+   - economics of software is broken
+     people creating excel, other people paid to convert it to real code
+
+* Socailly
+** GitHub
+   auto pulls latest libraries
+
+** Smalltalk
+   dynamic 
+
+** Interactive
+** The right thing -> the easy thing
+   docs, tests
+   tests like Rails
+
+* more
+  event based
+  logic trump plumbing
+  app author distinct from library author
+
+http://www.visi.io
+                                                                                        
+
+
+
+     
