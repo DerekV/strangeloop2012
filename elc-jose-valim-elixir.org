@@ -1,0 +1,15 @@
+Jose Valim
+Elixir
+
+
+* Elixir
+  built on erlang vm
+  compatable with current erlang code
+  
+* influences
+  erlang, clojure, ruby
+
+* impressions
+  I'm not familier enough with Erlang syntax to take note of the language differences/advantages with this one.
+  But should be interesting anywhere Erlang is interesting.
+  
