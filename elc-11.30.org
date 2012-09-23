@@ -1,0 +1,28 @@
+
+* lambdas in java 
+  enumerable.org (2010)
+
+* shen
+  Mark Tarver's
+  qiII
+  Kernel lisp KLAMBDA
+** ports
+   sbcl clisp
+   javascript
+   clojsure
+   haskell?
+   jvm
+
+** shenlanguage.org
+** downsides
+   interoperability
+
+* shenclojure
+
+* why - motivation 
+  not that a new language is 'the answer'
+  hunch that some ideas might be interesting to explore
+  hope
+
+  need to do something radical - but easy to get sucked into details, minor problems (eg lambdas in java)
+
