@@ -1,0 +1,59 @@
+David Herman
+Rust
+
+(Mozilla)
+
+* Rust
+  - low level / systems level programming langauge (compete with c/c++)
+  - AOT compiled
+** theme
+   Safe, Concurrent, Fast
+   "love child fo c++ erlang and caml"
+     
+* problems with c++
+  - akward to parrellelize
+  - not great for security
+
+* performance
+  - important in browsers
+  - refrence blog post Robert O'Callahan http://j.mp/abstraction-penalties
+** from c++
+*** zero cost abstactions
+    should be able to create abstractions without performance penalties
+** examples
+*** lambdas
+    lambdas gaurenteed inlining 
+
+* 3 pointers types
+  "front loading language complexity"
+** normal
+** managed pointers
+  syntax for managed pointers - memory management
+** unique pointer
+   only be one owner
+
+* concurancy
+  tasks - each task gets its own heap (no stack overflows)
+  create pipes
+  
+* saftey
+  stucts
+  impl methods
+  so can add methods to anything (eg ints)
+** traits
+   like haskel type-classes
+   allow implementing tyings such as pipes that only allow immutable data sharing
+
+** unsafe
+   "saftey [...] is a lie"
+   implemented a whole unsafe sub-language
+   need to declare explicitly 
+
+* links
+  http://smallcultfollowing.com/bablysteps
+  http://pcwalton.github.com
+  http://rustlang.org
+
+* go vs rust
+  rust - more control over perfromance
+  go - a bit simpler
