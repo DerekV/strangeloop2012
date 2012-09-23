@@ -1,0 +1,38 @@
+Stefan Karpinski
+Julia
+
+* Julia
+  for scientific / numerical / technical computing
+
+* Three Features
+** dynamic language
+
+** sophisticated parametric type system
+   dynamic, but with a way to talk about types (eg lisp, ruby)
+** multiple dispatch
+   like dylan, take into account all types of parameters
+
+* Low Level
+  write low level code in high level syntax - ok speed
+
+* Constrains
+  interactive, productive, tangible
+  unified type system
+  efficient arrays
+  math operators are just functions 
+    (yay)
+
+* Promotion
+  if no function defined for parameters, promote both to common type
+
+ 
+
+* from demo 
+  quickly define new numarical types
+  very litle code and decent perfromace ( withing order of mag from c++ ) 
+  example was ModInt , using a boxed number type (eg int mod 11)
+
+* upshot
+  good alternative 
+  not quite as fast as fortran c++ but in same class (unlike matlab, mathmatica, python)
+  likely a big thing 
