@@ -1,0 +1,25 @@
+Brian McKenna
+Roy
+
+types are formal methods
+
+console.log("40" + 2) // won't compile
+
+* ROY summory
+** looks similar to js
+** types
+   declare a function to take a type
+   only cares about minimum properties (not extra ones)
+** typeclasses
+** deffered
+   more consise code... haskell-ish
+
+** Roy write-once modules
+
+** Async module defs
+
+* Roy future
+  defered type error flag..  get type errors at runtime 
+
+* link
+  http://roy.brianmkenna.org
