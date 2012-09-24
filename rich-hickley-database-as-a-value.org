@@ -1,0 +1,118 @@
+* complexity
+  _Out of the Tar Pit_ -Moseley and Marks (2006)
+  Complexity is caused by state and control
+  Database is a giant shared variable
+
+* DB complexity
+  - inherently stateful
+  - 'over there' nature
+  - relational is well defined, 'update' poorly defined
+    - place-oriented , document or row is a place
+
+* Basis
+
+* Update
+  What does update mean?
+  visibility?
+
+* Place Model
+  conflating identity and value
+
+* coordination
+  - perception should require it
+  - process does
+
+* database state
+** an accretion of facts
+   - the past is immutable
+** process requires new space
+** fundumentally different from "place"
+
+* accretion
+** root per transaction
+   doesn't work - conflates process and time (and hard to maintain)
+** latest values include past
+   past is a subrange
+
+* facts include time
+
+** remove structure
+   ala "RDF"
+** Atomic Datom
+   entity attribute value transaction
+
+* Process
+** Reified
+** Primitive representation of novelty
+   - Assertions and retractions of facts
+   - important novelty should be minimal
+     eg what happend was "someone changed their email" not "my address book changed"
+
+* Deconstruction
+  proccoss || perception
+
+* State
+  a database is a sorted set of facts
+
+* Transactions and Indexing
+  a new novelty is written to disk (without index) and added to live in memory index
+  index then persisted not unlike bigtable (merge, drop old)
+
+* memory index
+  persistent sorted set
+
+* storage
+  - log of tx assers/retracts
+  - various covering indexes
+  - storage service/server requirements
+    - data segment values (key - value store)
+    - atoms (reads)
+    - pods (conditional put)
+  - can be sql database
+  
+* A DB value
+  a ref to a set of pointer to data in storage, and a ref to a place in live index
+  safe to hold (immutable)
+  immutability allows for lazy fetching etc
+
+* Process
+  - assert/retract can't express transformation
+  - Expand/splice until all assert/retracts
+** transaction function
+   (f db & args) -> tx-data
+   returns transaction data
+** tx-data: 
+   assert|retract|(tx-fn args...)
+** process expansion
+   somehow its like lisp macro expansion...
+
+* Transactor
+  seperate module from storage
+  - accepts transactions (novelty), expands, applies, logs, broadcasts
+
+* Cache
+  memcache below queries
+  never need to update cache keys
+
+
+* Client
+  GET /data/mem/test/1000/datoms?index=aevt
+** vs peer
+   peer basically does same query as client
+** Bases
+** db permalinks!
+** values
+   multiple conversations about same value
+
+* DB Values (again)
+** Time Travel
+   - db.asOf - past
+   - db.since - windowed
+   - db.with(tx) - speculative
+** dbs are arguments to query, not implicit
+   mock wid datom-shaped data
+   can ask speculative questions
+
+
+
+

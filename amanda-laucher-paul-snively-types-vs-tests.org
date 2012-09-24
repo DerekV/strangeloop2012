@@ -1,0 +1,39 @@
+Amanda Laucher
+Paul Snively
+
+* types
+  reffering to powerful type systems eg F#, scala
+
+
+* TDD dev (Amanda)
+  takes on using F#, type modeling first
+  finds:
+  - eliminates need for some types of tests (tests are code you have to maintain)
+  - could get lost creating types and not deliver code
+  
+
+* Scala (Paul) dev
+  tries writing tests first
+
+  - when you say "for all" maybe that should be a type
+  - too many tests
+  - some use-cases, example of correct input/output gave no real guidance
+  - test code is still code, with correctness, maintenance, etc, burden
+
+* overall
+  - small codebase, little value in types
+  - types scale better than tests
+  - types have litle value when talking with non technical end users
+  - the hardest part is understanding the requirements
+  - we rarely have the luxury of sample input/output
+  - tests can be good for forming ideas but then can be deleted
+  - heed code smell/ bad feelings/uglyness in type modeling
+ 
+"English is a piss-poor specification language, but there's got to be a better way than slavishly enumerating input/output examples ... that puts me very firmly in a 'property tests first, then types if reasonable'".  
+
+* final thoughts
+** use
+  Tests = "there exists"
+  Types = For all
+** contextual
+   use what makes sense
