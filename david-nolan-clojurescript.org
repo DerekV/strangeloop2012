@@ -1,0 +1,81 @@
+David Nolan
+
+"in the future it will seem so strange that a programer can write in whatever programming language they want so long as it compiles to javascript."
+
+* clojurescript
+  clojure compiled to javascript
+
+* javascript vs clojurescript
+** nondynamic aspects : operators vs functions
+   not first class functions
+   - []
+   - +
+     
+** clojurscript is expressions
+   javascript has statements
+** falsy
+   clojurscript, only nil or false is false
+
+* optimizations / performance
+  many features to produce fast js
+** techniques
+*** compier macros 
+   allows performance
+*** optimizing invokes
+    prop function hints like type hints
+*** google closure 
+    utilized for opimization
+** benchmarks
+   specral norm
+   java - 9.465s
+   js (v8) - 12.9s
+   dart generated js (v8) 13.9s
+   clojurescript js (v8) 13.0s
+
+* type inference
+  
+* clojure types are functions
+  from a language called "T"
+
+* clojure persistant data structures 
+  initially clojurescript just used copy on write
+  current implementations only a little slower
+   (won't be a bottleneck)
+
+* clojure protocols
+  can safely extend types we don't control (eg string) 
+  changes are local
+
+* browser repl
+  connected to your editor
+
+* namespaced
+  clojurescript compiler namespaces everything for you
+
+* macros
+
+* who owns the zebra
+  puzzle brought up in talk
+  (sounds like "einstien's puzzle")
+  logic programming, peter norvig, 
+
+* core.logic
+  Nolan's port of kanren to clojure (and clojurescript)
+
+
+
+http://himera.
+
+
+* problems
+** JS arith
+   not closure numerics
+** debugging
+   makes js, requires 
+** not bootsrapped
+   clojure is required
+** not sponsered
+** performance enhancements are not evenly distributed
+** a lot of generated code for trivial programs
+** little things missing from clojurescript
+   (that are present in clojure)

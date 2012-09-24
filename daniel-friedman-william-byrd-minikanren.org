@@ -1,0 +1,12 @@
+
+miniKanren
+
+http://kanren.sourceforge.net/#Distributions
+
+The Reasoned Schemer 
+
+TODO -> read this book and figure out what I just watched.
+
+Best I can figure its a scheme based declaritive logic modeling language that solves,
+ producing code potentially
+
