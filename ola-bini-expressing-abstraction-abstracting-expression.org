@@ -1,0 +1,121 @@
+Ola Bini
+expresseing abstraction abstracting expression.org
+
+Why are new languages created (still)?
+
+* Expressiveness
+  + on the one hand, it means you can do something
+  + on the other, it means you can do anything
+
+  could become too expressive - need to be practical
+
+  - possibly : an expressive feature is one where you can't do it otherwise without major reorginization of your program.
+
+* The Blub Paradox
+  Don't know that a programming language is more powerfull/expressive unless you know that langauage.
+  
+* Aspects of Expressiveness
+  1. Regularity 
+     (related : orthoginality)
+  2. Readability
+  3. Learnability
+     possibly important
+  4. Essence vs Ceremony
+     everything that i have to say that is not some apsect of my program is ceremony
+  5. Precision vs Consiseness
+
+* Expressiveness over Performance
+  doing it niavly => a slow language
+  too slow, not expressive
+
+* Theoretical expressiveness
+
+**  [[https://docs.google.com/viewer?a=v&q=cache:Shjawllzzl8J:citeseerx.ist.psu.edu/viewdoc/download?doi%3D10.1.1.51.4656%26rep%3Drep1%26type%3Dpdf+&hl=en&gl=us&pid=bl&srcid=ADGEEShkQkwy-t4LhnxEkIvRCOclx_e_YiqsRK0juozZHnQdc2aZXm162hE9Lc1FBJQhh0wj6rdoq7wuJ4TC2IkoV7nRF26VxKTHp8__zCr6xpYWwLUU3c0_xyDTnfFzU6s40RssKXvc&sig=AHIEtbTUlR15AB3P1THWgYeVR8ttv0Ineg&pli=1][Fellesien]]
+    'more expressive means that the translation of a program
+*** Macro Expressiveness
+
+* Practical Expressiveness
+  what is readable
+
+* abstraction
+  Abstracting:
+  1. Objects
+  2. Classes of Objects
+  3. Functionality
+  4. Structure (of data)
+  5. Structure (of code)
+  6. Relationship
+  7. Paradigm
+  8. Elaboration
+
+* Macros
+  types
+  1. c-style replacement
+  2. ast macros (or s-expr macros, lisp's)
+  3. template macros
+     are turing complete,, but its a whole other language
+     also scala's macro language
+** Modularity
+   - Expression problem
+
+* Static typing
+  "reduces expressiveness of a programming language" (not black and white)
+  but is is really powerful
+
+* Generics
+
+* Type Classes
+  not really a static language feature 
+  is dispatch mechanism that happens at runtime
+  
+* abstractions are leaky
+  ORM 
+
+* Refernents
+
+* Macros
+  Generic vs Specific 
+
+* Abstractions remove duplication
+  not the main reason to use, enhance readability
+
+* linguistics
+  natural languages have things not really seen in programming languaess
+  - simile
+  - analogy
+  - intentional redundancy
+    (usually annoying in programmin languages but often intentional in natural langauges)
+** _its about communication_
+
+* syntax
+  is important in practice
+** operator overloading
+   disallow, allow for built in operators, have all operator be functions, or allow arbitrary operators
+** optimizing
+   - for writing
+     - succenctness
+   - for reading
+     - expert or novice or nonprogrammer?
+   - for parsing
+** also 
+   historical decisions vs starting from scratch
+
+** intent
+   "syntax is how you express intent"
+
+* Design principles
+  - one paradigm
+  - minimal core set of concept
+  - simplicity
+  - first class everything
+  - skinnable type system
+
+* final thoughts
+  exressiveness not always better
+  expressiveness and abstractions are relative
+  - you want a meta-expressive language
+    racket
+    cola
+   
+
+  
