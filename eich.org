@@ -1,0 +1,9 @@
+* ES6
+  stuff from coffeescript and python
+  generators
+
+
+sweetjs.org  macros on JS
+
+"JS>Bytecode"
+"I'm about to die... I'm about to get fragged" - playing fps in fron of strangeloop
