@@ -7,3 +7,14 @@ sweetjs.org  macros on JS
 
 "JS>Bytecode"
 "I'm about to die... I'm about to get fragged" - playing fps in fron of strangeloop
+
+crosscompile xna
+xmlvm.org
+
+es7 rivertrail psj (parrellel js)
+
+js won't have shared memory parrellelism
+ - maybe pure functional type constructs 
+
+http://www.alwaysbetonjs.com
+
