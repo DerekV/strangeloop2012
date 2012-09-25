@@ -1,0 +1,86 @@
+
+Jim Weirich
+Y-Not
+
+* Lambda Calculus
+** Church Thesis
+   All things which are computable can be computed via lambda calculus 
+   (predates turing, slightly)
+** Its like macro expansion
+   - Only functions and variables
+   - repeated application of functions to represent numbers
+
+* Fixpoint
+  Any value that goes through a function unchanged 
+  eg sin(0)=0, sqrt(1)=1, sqrt(2)=2
+
+* higher order fixpoint functions - refactoring 
+  wrap functions in a way that doesn't effect output
+** Tennent Corresopondence Prinicple
+   "Tennet refactoring"
+** Introduce Binding
+   make it so unused variables do not effect outcome ( like ... in c?)
+** Wrap Function
+   obvious
+** Inline Definition
+   - important because in lamda calculus there is not "define function" so it works more by symbolic replacement (thus like macro expansion)
+   - thus can't use recursion normally
+   
+* demo
+** generate a factorial
+*** 1st step
+   (def error (fn [n] (throw (Throwable. "SHOULD NOT BE CALLED"))))  
+    (def improver (fn [partial] (fn [n] (if (zero? n) 1 (* n partial (dec n))))))
+    (def f0 )
+    (def f1 (improver error))
+    ...
+    (def fx (improver (improver (improver (improver (improver (improver ..... (improver error)))))))))))..
+*** 2nd
+      (def fx
+         ((fn [improver] (improver improver))
+           (fn [n] (if (zero? n) 1 (* n ((improver improver) (dec n)))))))
+*** 3rd
+      ((fn [x] (x x))
+        (fn [x] 
+          (fn [n] (if (zero? n) 1 (* n ((x x) (dec n)))))))
+*** 4th
+#+BEGIN clojure
+
+
+;; factorial 5
+(((fn [code]
+    ((fn [x] (x x))
+     (fn [x]
+       (code (fn [v] ((x x) v))))))
+  (fn [partial]
+    (fn [n] (if (zero? n) 1 (* n (partial (dec n))))))) 5) 
+#+END
+++ with defs
+
+#+BEGIN clojure
+( def error (fn [n] (throw (Throwable. "SHOUDL NO BE CALLED"))))
+
+(def fact-improver
+  (fn [partial]
+    (fn [n] (if (zero? n) 1 (* n (partial (dec n)))))))
+
+
+(def y
+  (fn [improver]
+    ((fn [x] (x x))
+     (fn [x]
+       (improver (fn [v] ((x x) v)))))))
+
+
+;; Y calculates the fixpoint of an improver function
+(def fact (y fact-improver))
+
+;; Fact is the fixpoint of the fact-improver
+(fact-improver fact)
+
+(fact 5) ;; should work
+
+#+END
+
+* see also
+  "programming with nothing" Tom Stuart
