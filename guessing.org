@@ -1,0 +1,36 @@
+Oleg Kiselyov
+
+
+* library for nondeterminism
+  - choose
+  - fail
+
+* Hansei
+  http://okmij.org/ftp/kakuritu
+
+
+
+* Parsing
+  - parser combnators (build parsers out of parsers)
+  - using a parser's success / failure to determine a match eg palindrom
+  - generage 'random' strings matching a given grammer
+
+* termination
+  
+* laziness
+  - proceeed as if we guessed
+  - not laziness like haskell , which mutates global shared memory
+  - laziness in this sense...
+    "non-deterministic laziness need first-class memory
+
+* letlazy
+  like unix fork
+
+* thus 
+  generate code by guessing
+
+
+* in other languages
+  - "continuation state monad"
+    (in scala, haskell)
+

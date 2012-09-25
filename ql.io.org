@@ -1,0 +1,59 @@
+Subbu Allamaraju
+ql.io
+
+
+* problem
+  clients talking to multiple api's
+  one solution : build a gateway
+
+* performace and scalability
+** node.js
+   good for io-driven (gateway)
+
+
+* event driven http client
+  - event driven fetch from multiple servers
+** cooridantion problem
+*** async 
+    helpful - still difficult to debug
+
+* sql like syntax
+  - http interface mapped to a "table" (data source)
+  - CRUD operations mapped to select etc
+  - variable substitution
+  - json paths like table.col
+  - 
+
+* DSLs in note.js
+** jison
+   http://zaach.github.com/jison
+** PEG.js
+   a parser generateor for JS
+   
+* ql.io 
+** workflow
+   sql-ish declaritive sytax defines a sort of workflow
+** error handling
+*** idempotency
+    on error retry if request is idempotent
+*** charlie
+    module in ql.io
+    abstract away deciscion making about success failure
+    (timeouts)
+
+* gothcya
+** logging
+   winston (node logger) => oops disk full
+*** emitter
+#+BEGIN javascript
+    emitter.emit('WARNING', lalala...);
+    
+    // elsewhere
+    emitter.on('WARNING', function() {
+    // write to external remote
+    // if fail, write to disk log 
+    }
+#+END
+
+* derek's thoughts
+  using DSLs and other abstractions to deal with real world problems
