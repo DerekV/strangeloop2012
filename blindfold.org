@@ -1,0 +1,36 @@
+
+1. read the vocabulary
+2. follow the flow
+3. see the state
+4. create by reacting
+5. create by abstracting
+
+* read the vocabulary
+  - labeled parameters?
+** explain the context
+** make the meaning transparent   
+* follow the flow
+** make flow tangible
+   slider for states during execution
+** ake flow visible
+   timeline
+** make time tangible
+* see the state
+** show the data
+** show comparisons
+** eliminate the hidden state
+
+* create by reacting
+** drop the parts bucket on the floor
+** get something on the screen as soon as possible
+* create by abstracting
+** start concrete then generalize
+   - start with one, then many
+   - start with literal, then generalize
+
+* how does it scale?
+  "programming has to work like this" 
+  assume these are requirements, then how do we redisgn programming
+
+
+
